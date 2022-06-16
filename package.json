@@ -1,0 +1,33 @@
+{
+  "name": "gestor_de_vulnerabilidades",
+  "version": "1.0.0",
+  "description": "Aplicacion para la gestion de vulnetabilidades",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "Cristian Manuel Rangel Gonzalez",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^19.0.3",
+    "electron-builder": "^23.0.3"
+  },
+  "build": {
+    "appId": "com.app.electron",
+    "productName": "Nombre del la app",
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
